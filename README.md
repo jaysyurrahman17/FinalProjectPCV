@@ -63,8 +63,7 @@ Project ini dibangun dengan pendekatan modular menggunakan pustaka berikut:
 ├── config.py       # Konfigurasi konstanta (Threshold, Path File, Warna)
 ├── utils.py        # Fungsi utilitas (Load gambar, Matematika Vektor, Alpha Blending)
 ├── main.py         # Main Loop program dan logika rendering
-├── background.jpg  # Latar belakang avatar
-└── assets/         # Folder berisi potongan gambar tubuh (Kepala, Tangan, Badan, dll) 
+└── gambar/         # Folder berisi potongan gambar tubuh (Kepala, Tangan, Badan, dll) dan background
 ```
 ## 🧠 Penjelasan Logika Kunci
 
@@ -104,6 +103,7 @@ python main.py
 ## 📝 Catatan Pengembang
 
 Sistem ini menggunakan pendekatan *2D rigging* sederhana. Keterbatasan utama adalah tidak adanya informasi kedalaman (Z-axis) yang akurat, sehingga tumpukan gambar (*layering*) bersifat statis.
+
 
 
 
