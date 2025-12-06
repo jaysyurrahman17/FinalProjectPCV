@@ -1,4 +1,4 @@
-#Final Project PCV
+# Final Project PCV
 🎥 2D Real-time VTuber System with MediaPipe
 
 Project ini adalah implementasi sistem Virtual YouTuber (VTuber) 2D sederhana menggunakan Python. Sistem ini menangkap gerakan tubuh dan ekspresi wajah pengguna melalui webcam secara real-time tanpa memerlukan peralatan motion capture mahal, hanya menggunakan Computer Vision.
