@@ -1,24 +1,25 @@
+# Final Project VTuber
 ## 🎥 2D Real-time VTuber System with MediaPipe
 
 Project ini adalah implementasi sistem Virtual YouTuber (VTuber) 2D sederhana menggunakan Python. Sistem ini menangkap gerakan tubuh dan ekspresi wajah pengguna melalui webcam secara real-time tanpa memerlukan peralatan motion capture mahal, hanya menggunakan Computer Vision.
 
-# 🚀 Fitur Utama
+## 🚀 Fitur Utama
 
-Pose Tracking (Full Body): Menggerakkan badan, tangan, dan kaki avatar mengikuti gerakan pengguna.
+*Pose Tracking (Full Body): Menggerakkan badan, tangan, dan kaki avatar mengikuti gerakan pengguna.
 
-Face Expression Tracking:
+*Face Expression Tracking:
 
 * Deteksi Kedipan Mata (Kanan/Kiri).
 
-Deteksi Mulut Terbuka.
+* Deteksi Mulut Terbuka.
 
-Ekspresi Khusus "Melotot" (Mata terbuka lebar).
+* Ekspresi Khusus "Melotot" (Mata terbuka lebar).
 
-Dynamic Scaling & Rotation: Avatar dapat membesar/mengecil (Zoom) saat pengguna mendekat ke kamera, dan badan dapat miring mengikuti postur tubuh.
+*Dynamic Scaling & Rotation: Avatar dapat membesar/mengecil (Zoom) saat pengguna mendekat ke kamera, dan badan dapat miring mengikuti postur tubuh.
 
-Gesture Detection: Deteksi gerakan spesifik (misal: Mengangkat tangan kiri di atas kepala) untuk memicu teks visual ("NEIN!!").
+*Gesture Detection: Deteksi gerakan spesifik (misal: Mengangkat tangan kiri di atas kepala) untuk memicu teks visual ("NEIN!!").
 
-🛠️ Teknologi & Konsep Teknis
+## 🛠️ Teknologi & Konsep Teknis
 
 Project ini dibangun dengan pendekatan modular menggunakan pustaka berikut:
 
@@ -89,6 +90,7 @@ python main.py
 📝 Catatan Pengembang
 
 Sistem ini menggunakan pendekatan 2D rigging sederhana. Keterbatasan utama adalah tidak adanya informasi kedalaman (Z-axis) yang akurat, sehingga tumpukan gambar (layering) bersifat statis.
+
 
 
 
