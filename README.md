@@ -7,7 +7,7 @@ Project ini adalah implementasi sistem Virtual YouTuber (VTuber) 2D sederhana me
 
 *Pose Tracking (Full Body): Menggerakkan badan, tangan, dan kaki avatar mengikuti gerakan pengguna.
 
-*Face Expression Tracking:
+-Face Expression Tracking:
 
 * Deteksi Kedipan Mata (Kanan/Kiri).
 
@@ -90,6 +90,7 @@ python main.py
 📝 Catatan Pengembang
 
 Sistem ini menggunakan pendekatan 2D rigging sederhana. Keterbatasan utama adalah tidak adanya informasi kedalaman (Z-axis) yang akurat, sehingga tumpukan gambar (layering) bersifat statis.
+
 
 
 
