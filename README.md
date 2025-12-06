@@ -7,7 +7,7 @@ Project ini adalah implementasi sistem Virtual YouTuber (VTuber) 2D sederhana me
 
 Klik gambar di bawah ini untuk melihat demonstrasi sistem:
 
-[![Judul](https://drive.google.com/file/d/19onSMCglbKn6oi3PMRF_d0PvC_9PHj60/view?usp=drive_link)](https://drive.google.com/file/d/1vORGDEB4i2_HfPM1iwgnRV52YkuaJxqY/view?usp=drive_link)
+[![Judul](https://drive.google.com/uc?export=view&id=19onSMCglbKn6oi3PMRF_d0PvC_9PHj60)](https://drive.google.com/file/d/1vORGDEB4i2_HfPM1iwgnRV52YkuaJxqY/view?usp=drive_link)
 
 ## 🚀 Fitur Utama
 
@@ -104,6 +104,7 @@ python main.py
 ## 📝 Catatan Pengembang
 
 Sistem ini menggunakan pendekatan *2D rigging* sederhana. Keterbatasan utama adalah tidak adanya informasi kedalaman (Z-axis) yang akurat, sehingga tumpukan gambar (*layering*) bersifat statis.
+
 
 
 
