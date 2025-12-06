@@ -1,5 +1,3 @@
-\# Final Project PCV
-
 🎥 2D Real-time VTuber System with MediaPipe
 
 Project ini adalah implementasi sistem Virtual YouTuber (VTuber) 2D sederhana menggunakan Python. Sistem ini menangkap gerakan tubuh dan ekspresi wajah pengguna melalui webcam secara real-time tanpa memerlukan peralatan motion capture mahal, hanya menggunakan Computer Vision.
@@ -16,11 +14,11 @@ Deteksi Mulut Terbuka.
 
 Ekspresi Khusus "Melotot" (Mata terbuka lebar).
 
-Dynamic Scaling \& Rotation: Avatar dapat membesar/mengecil (Zoom) saat pengguna mendekat ke kamera, dan badan dapat miring mengikuti postur tubuh.
+Dynamic Scaling & Rotation: Avatar dapat membesar/mengecil (Zoom) saat pengguna mendekat ke kamera, dan badan dapat miring mengikuti postur tubuh.
 
 Gesture Detection: Deteksi gerakan spesifik (misal: Mengangkat tangan kiri di atas kepala) untuk memicu teks visual ("NEIN!!").
 
-🛠️ Teknologi \& Konsep Teknis
+🛠️ Teknologi & Konsep Teknis
 
 Project ini dibangun dengan pendekatan modular menggunakan pustaka berikut:
 
@@ -60,7 +58,6 @@ Menggunakan teknik Alpha Blending untuk transparansi yang halus.
 └── assets/         # Folder berisi potongan gambar tubuh (Kepala, Tangan, Badan, dll)
 
 
-
 🧠 Penjelasan Logika Kunci
 
 1. Alpha Blending
@@ -68,20 +65,17 @@ Menggunakan teknik Alpha Blending untuk transparansi yang halus.
 Untuk menempelkan bagian tubuh (PNG) ke latar belakang tanpa kotak hitam, digunakan rumus:
 
 
-
-$$Pixel\_{result} = (\\alpha \\times Pixel\_{FG}) + ((1 - \\alpha) \\times Pixel\_{BG})$$
-
+$$Pixel_{result} = (\alpha \times Pixel_{FG}) + ((1 - \alpha) \times Pixel_{BG})$$
 
 
-Dimana $\\alpha$ adalah channel transparansi dari gambar aset.
+Dimana $\alpha$ adalah channel transparansi dari gambar aset.
 
 2. Rotasi 2D (Affine Transformation)
 
 Agar tangan dan badan bisa miring, gambar diputar menggunakan matriks rotasi sebelum ditempel:
 
 M = cv2.getRotationMatrix2D(center, angle, scale)
-rotated\_img = cv2.warpAffine(img, M, (new\_w, new\_h))
-
+rotated_img = cv2.warpAffine(img, M, (new_w, new_h))
 
 
 📦 Cara Menjalankan
@@ -91,7 +85,6 @@ Install Dependensi:
 pip install opencv-python mediapipe numpy
 
 
-
 Siapkan Aset: Pastikan folder berisi gambar .png untuk bagian tubuh (wajah, badan, tangan, dll) sesuai nama di config.py.
 
 Jalankan:
@@ -99,8 +92,6 @@ Jalankan:
 python main.py
 
 
-
 📝 Catatan Pengembang
 
 Sistem ini menggunakan pendekatan 2D rigging sederhana. Keterbatasan utama adalah tidak adanya informasi kedalaman (Z-axis) yang akurat, sehingga tumpukan gambar (layering) bersifat statis.
-
