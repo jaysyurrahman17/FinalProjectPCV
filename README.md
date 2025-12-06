@@ -2,7 +2,7 @@
 
 Project ini adalah implementasi sistem Virtual YouTuber (VTuber) 2D sederhana menggunakan Python. Sistem ini menangkap gerakan tubuh dan ekspresi wajah pengguna melalui webcam secara real-time tanpa memerlukan peralatan motion capture mahal, hanya menggunakan Computer Vision.
 
-#🚀 Fitur Utama
+# 🚀 Fitur Utama
 
 Pose Tracking (Full Body): Menggerakkan badan, tangan, dan kaki avatar mengikuti gerakan pengguna.
 
@@ -89,5 +89,6 @@ python main.py
 📝 Catatan Pengembang
 
 Sistem ini menggunakan pendekatan 2D rigging sederhana. Keterbatasan utama adalah tidak adanya informasi kedalaman (Z-axis) yang akurat, sehingga tumpukan gambar (layering) bersifat statis.
+
 
 
