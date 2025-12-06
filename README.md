@@ -30,7 +30,7 @@ Project ini dibangun dengan pendekatan modular menggunakan pustaka berikut:
 - **NumPy:** Untuk operasi matriks dan kalkulasi geometri vektor.
 
 
-**Alur Kerja (Workflow)**
+### Alur Kerja (Workflow)
 
 1. **Input:** Frame diambil dari Webcam.
 
@@ -40,15 +40,15 @@ Project ini dibangun dengan pendekatan modular menggunakan pustaka berikut:
 
 4. **Geometri:**
 
-- Menghitung sudut rotasi antar sendi (misal: Bahu ke Siku) menggunakan ```atan2```.
+    - Menghitung sudut rotasi antar sendi (misal: Bahu ke Siku) menggunakan ```atan2```.
 
-- Menghitung skala avatar berdasarkan lebar bahu pengguna.
+    - Menghitung skala avatar berdasarkan lebar bahu pengguna.
 
 5. **Rendering (Painter's Algorithm):**
 
-- Aset gambar (PNG transparan) ditempel (overlay) dari urutan paling belakang ke depan (Kaki -> Badan -> Kepala -> Tangan).
+    - Aset gambar (PNG transparan) ditempel (overlay) dari urutan paling belakang ke depan (Kaki -> Badan -> Kepala -> Tangan).
 
-- Menggunakan teknik Alpha Blending untuk transparansi yang halus.
+    - Menggunakan teknik Alpha Blending untuk transparansi yang halus.
 
 ## 📂 Struktur File
 
@@ -98,6 +98,7 @@ python main.py
 ## 📝 Catatan Pengembang
 
 Sistem ini menggunakan pendekatan *2D rigging* sederhana. Keterbatasan utama adalah tidak adanya informasi kedalaman (Z-axis) yang akurat, sehingga tumpukan gambar (*layering*) bersifat statis.
+
 
 
 
